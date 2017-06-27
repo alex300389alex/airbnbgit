@@ -1,0 +1,195 @@
+html,body{
+    width: 100%;
+    background-color: transparent;
+}
+body{
+    height: 100%;
+    font-size: 0;
+    margin: 0;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    height: 65px;
+    display: block;
+}
+.logo{
+    width: 100px;
+    height: 100%;
+    background-color: aqua;
+    display: inline-block;
+}
+.user-menu{
+    height: 100%;
+    width: 300px;
+    background-color: aqua;
+    display: inline-block;
+}
+.space-block{
+    height: 100%;
+    width: calc(100% - 400px);
+    background-color: antiquewhite;
+    display: inline-block;
+}
+/*CONTENT*/
+.content{
+    width: 1032px;
+    background-color: white;
+    margin: 200px auto;
+}
+.background-cont{
+    background-image: url("../img/01.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    vertical-align: top;
+    display: inline-block;
+}
+.slogan{
+    width: calc(100% - 40%);
+    padding: 20px 0 0 20px;
+    margin-bottom: 30px;
+}
+h1{
+    margin: 0;
+    font-size: 48px;
+}
+.airbnb{
+    font-weight: 700;
+    color: red;
+}
+.search-bar{
+    width: calc(100% - 40px);
+    height: 80px;
+    margin: 20px auto;
+}
+form{height: 100%}
+.search-form{
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+border-radius: 3px;
+    height: 100%;
+}
+.col-form{
+    height: 100%;
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+}
+.name-form{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.name-form_search{
+    margin-left: 13px;
+}
+.name-form_search input{
+    font-size: 25px;
+    border: 0;
+}
+.data{
+    width: calc(33.33% - 2px);
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+.start_search{
+    float: right;
+    margin-top: -66px;
+    z-index: 2;
+    position: relative;
+}
+.btn-search{
+    font-size: 19px;
+    background-color: orangered;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    line-height: 15px;
+    padding: 10px 18px;
+    margin: 12px;
+}
+
+.col-main{
+    margin: 10px;
+    position: relative;
+}
+.col-hidden{
+    overflow: hidden;
+}
+#row{
+    width: 100%;
+    white-space: nowrap;
+    transform: translate(0,0);
+    transition: 0.5s;
+}
+.row__header{
+    display: block;
+    margin: 0 10px;
+}
+.row__header__name{
+    font-size: 28px;
+    display: inline-block;
+    width: 80%;
+}
+.row__header__all{
+    font-size: 18px;
+    text-align: right;
+    display: inline-block;
+    width: 20%;
+}
+.col{
+    height: 300px;
+    width: calc(20% - 20px);
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.arrow{
+    position: absolute;
+}
+#arrow-left {
+    content: '';
+    display: block;
+    height: 25px;
+    position: absolute;
+    width: 5px;
+    background-color: black;
+    top: 40%;
+    left: -5px;
+}
+#arrow-right {
+    content: '';
+    display: block;
+    height: 25px;
+    position: absolute;
+    width: 5px;
+    background-color: black;
+    top: 40%;
+    right: -5px;
+}
+.picture{
+    width: 100%;
+    height: 230px;
+    background-image: url("../img/02.jpg");
+}
+.option{
+    font-size: 18px;
+    line-height: 18px;
+    white-space: normal;
+    padding: 5px;
+}
+.star{
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+:root {
+    --block-color: violet;
+}
+
+.col {
+    color: var(--block-color);
+}

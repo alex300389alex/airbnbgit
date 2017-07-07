@@ -24,3 +24,33 @@ arrowRight.onclick=function(){
         document.getElementById('row').style.transform = 'translate(-' + num + 'px,0)';
     }
 };
+
+/*respons-menu*/
+
+var headerLogo = document.querySelector('.header_logo');
+var header = document.querySelector('.header');
+var menu734 = document.querySelector('.top-menu734');
+//var headerUserMenu = document.querySelector('.header_user-menu');
+var numMenu=0;
+headerLogo.onclick = function(){
+    numMenu++;
+    if(numMenu%2!=0) {
+        //headerUserMenu.style.display = 'none';
+        header.style.position = 'fixed';
+        header.style.top ='0';
+        menu734.style.top = '46px';
+    } else {
+        header.style.position = 'relative';
+        menu734.style.top = '-1000px';
+    }
+};
+
+var searchForm = document.querySelector('.search-form');
+var searchBarTopMenu = document.querySelector('.search-bar-top-menu');
+searchForm.onclick = function(){
+        searchBarTopMenu.style.top = '0';
+};
+var headerUserMenuOut = document.querySelector('.header_user-menu_out');
+headerUserMenuOut.onclick = function(){
+    searchBarTopMenu.style.top = '-300px';
+};
